@@ -4,12 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Figuras JS</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
+    <header class="header">
+        <h1 class="titulo">
+             Figuras Geometricas
+        </h1>
+    </header>
+    <section class="main-container">
+        <div class="main-subcontainer">
+            <h2 class="main-subtitle"> Cuadrado</h2>
+            <div class="forma-cuadrado"></div>
+            <form action="">
+                <label class="label-cuadrado" for="inputCuadrado">
+                    <input class="label-cuadrado-input" id="inputCuadrado" type="number" placeholder="Lados">
+
+                    <button id="buttonArea" onclick="calcularAreaCuadrado()" type="button">
+                        <span class="button_top"> Calcular Area
+                        </span>
+                      </button>
+
+                    <button id="buttonPerimetro" onclick="calcularPerimetroCuadrado()" type="button">
+                        <span class="button_top"> Calcular Perimetro
+                        </span>
+                      </button>
+
+                </label>
+            </form>
+        </div>
+        <div class="main-subcontainer">
+            <h2 class="main-subtitle"> Triangulo</h2>
+            <div class="triangulo-equilatero-bottom"></div>
+            <form action="">
+                <label class="label-triangulo" for="inputTriangulo">
+                    <div class="label-triangulo-input-container">
+                        <input class="label-triangulo-input" id="inputTrianguloA" type="number" placeholder="Lado A">
+                        <input class="label-triangulo-input" id="inputTrianguloB" type="number" placeholder="Lado B">
+                        <input class="label-triangulo-input" id="inputTrianguloC" type="number" placeholder="Base">
+                        <input class="label-triangulo-input-A" id="inputTrianguloAltura" type="number" placeholder="Altura">
+                    </div>
+                    
+                    
+
+                    <button id="buttonArea" onclick="calcularAreaTriangulo()" type="button">
+                        <span class="button_top"> Calcular Area
+                        </span>
+                      </button>
+
+                    <button id="buttonPerimetro" onclick="calcularPerimetroTriangulo()" type="button">
+                        <span class="button_top"> Calcular Perimetro
+                        </span>
+                      </button>
+
+                </label>
+            </form>
+        </div>
+        <div class="main-subcontainer">
+            <h2 class="main-subtitle"> Circulo</h2>
+            <div class="forma-circulo"></div>
+            <form action="">
+                <label class="label-cuadrado" for="inputCirculo">
+                    <input class="label-cuadrado-input" id="inputCirculo" type="number" placeholder="radio">
+
+                    <button id="buttonArea" onclick="calcularAreaCirculo()" type="button">
+                        <span class="button_top"> Calcular Area
+                        </span>
+                      </button>
+
+                    <button id="buttonPerimetro" onclick="calcularPerimetroCirculo()" type="button">
+                        <span class="button_top"> Calcular Perimetro
+                        </span>
+                      </button>
+
+                </label>
+            </form>
+        </div>
+    </section>
     <script src="./Figuras.js"></script>
 </body>
 </html>
